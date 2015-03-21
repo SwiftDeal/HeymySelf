@@ -1,0 +1,4 @@
+[09-Oct-2014 13:46:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/cloudstech/public_html/application/views/admin/allmessages.php on line 26
+[09-Oct-2014 14:17:55 UTC] PHP Notice:  Undefined index: message_id in /home/cloudstech/public_html/application/controllers/admin/action.php on line 17
+[09-Oct-2014 14:18:10 UTC] PHP Notice:  Undefined index: message_id in /home/cloudstech/public_html/application/controllers/admin/action.php on line 17
+[09-Oct-2014 14:18:38 UTC] PHP Notice:  Undefined index: propert_id in /home/cloudstech/public_html/application/controllers/admin/action.php on line 17

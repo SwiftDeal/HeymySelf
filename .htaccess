@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^home/?$ application/controllers/public/index.php [NC,L]
+	RewriteRule ^/?$ application/controllers/public/index.php [NC,L]
+	RewriteRule ^error/?$ application/controllers/public/404.php [NC,L]
+	RewriteRule ^messages/?$ application/controllers/public/messages.php [NC,L]
+	RewriteRule ^message/([A-Za-z0-9-]+)/?$ application/controllers/public/message.php?message_id=$1 [NC,L]
+	RewriteRule ^messages/([A-Za-z0-9-]+)/?$ application/controllers/public/messages.php?page=$1 [NC,L]
+	
+	RewriteRule ^admin/?$ application/controllers/admin/index.php [NC,L]
+	RewriteRule ^admin/messages/?$ application/controllers/admin/allmessages.php [NC,L]
+	RewriteRule ^admin/profile/?$ application/controllers/admin/profile.php [NC,L]
+	RewriteRule ^admin/login/?$ application/controllers/admin/login.php [NC,L]
+	RewriteRule ^logout/?$ application/controllers/admin/logout.php [NC,L]
+	
+	RewriteRule ^confirm/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$ application/controllers/public/confirm.php?message_id=$1&access_token=$2 [NC,L]
+</IfModule>

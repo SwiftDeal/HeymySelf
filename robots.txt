@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /controller/admin/
+Disallow: /controller/employer/
+Disallow: /controller/model/
+Disallow: /admin/
+Disallow: /view/others/
